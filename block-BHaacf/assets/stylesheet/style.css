@@ -1,0 +1,543 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* -----------------------css reset ends here ---------------------------------*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+.feature button:hover {
+    opacity: 1;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+
+/*---------------------------- header------------------------ */
+
+header {
+    position: relative;
+    height: 100vh;
+    background-color: rgba(44, 43, 43, 0.376);
+}
+
+span,
+.active {
+    color: rgb(237, 86, 58) !important;
+}
+
+nav ul {
+    display: flex;
+}
+
+.video {
+    position: absolute;
+    opacity: 3;
+    width: 99.23vw;
+    overflow: hidden;
+    height: 100vh;
+    z-index: -1;
+}
+
+.header {
+    background-color: rgba(102, 109, 117, 0.267);
+}
+
+.training {
+    font-size: 38px;
+    font-weight: 700;
+    color: white
+}
+
+.nav ul li a {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.sign {
+    color: white;
+    background-color: rgb(237, 86, 58);
+    padding: 10px 10px;
+    border: none;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.header_title {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.header_title h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.header_title h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    padding: 18px 0;
+}
+
+.header_title button,
+.program button {
+    color: white;
+    background-color: rgb(237, 86, 58);
+    font-size: 14px;
+    border: none;
+    padding: 10px 12px;
+}
+
+
+/* -------------------------------main---------------------------- */
+
+blockquote {
+    margin: 22px 0 30px 0;
+    color: rgb(182, 182, 182);
+}
+
+.features {
+    padding: 5% 0;
+    text-align: center;
+}
+
+.feature {
+    text-align: left;
+    padding: 0 20px;
+}
+
+.features h2,
+.classes h2,
+.Schedule h2,
+.expert h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.flex-item h5 {
+    color: rgb(52, 61, 71);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.flex-item p {
+    color: rgb(182, 182, 182);
+    font-size: 16px;
+}
+
+.flex-item button {
+    color: rgb(237, 86, 58);
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    background: transparent;
+}
+
+.flex_c .flex-item {
+    padding: 20px;
+}
+
+.feature span {
+    color: rgb(62, 147, 255)!important;
+}
+
+.program {
+    background-image: url("../cta-bg.jpg");
+    height: 380px;
+    text-align: center;
+}
+
+.program h2 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 9.5%;
+}
+
+.program p,
+.Schedule p {
+    color: aliceblue;
+    padding: 30px 40px;
+}
+
+.classes {
+    padding: 5% 0;
+    text-align: center;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    width: 30%;
+}
+
+.first div {
+    padding: 26px 32px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.096), 0 6px 6px rgba(0, 0, 0, 0.144);
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+.first div a {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.view {
+    color: white;
+    background-color: rgb(237, 86, 58);
+    padding: 12px 12px;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 7px;
+    border: none;
+}
+
+.hero {
+    text-align: left;
+    width: 50%;
+    margin-top: -26px;
+}
+
+.hero img {
+    width: 110%;
+}
+
+.hero p {
+    padding: 20px 20px 20px 0;
+    color: rgb(163, 163, 163);
+}
+
+.Schedule {
+    background: url("../schedule-bg.jpg");
+    height: 71rem;
+    background-size: cover;
+    text-align: center;
+}
+
+.Schedule h2,
+.program h2 {
+    color: white;
+}
+
+.Schedule ul li a {
+    color: white;
+}
+
+.schedule_ul {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.schedule_ul li {
+    margin-right: 10px;
+}
+
+.schedule_ul li a:hover {
+    color: rgb(237, 86, 58);
+}
+
+.Schedule h2 {
+    padding-top: 190px;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 40px 55px;
+    color: white;
+    font-size: 13px;
+    font-weight: 550;
+}
+
+table {
+    margin: 50px auto;
+}
+
+.expert {
+    text-align: center;
+    padding: 7% 0;
+}
+
+.col-1 {
+    display: flex;
+}
+
+.col-2 {
+    text-align: left;
+    width: 34%;
+    padding: 33px 32px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.096), 0 6px 6px rgba(0, 0, 0, 0.144);
+    margin: 18px;
+    border-radius: 7px;
+}
+
+.col-2 a,
+.col-2 h4,
+.col-2 p {
+    padding: 8px 0 16px 0;
+}
+
+.col-2 a {
+    padding-top: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.col-2 h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(35, 45, 56);
+}
+
+.col-2 p,
+.col-2 i {
+    color: rgb(35, 45, 56);
+}
+
+.col-2 i {
+    margin-right: 15px;
+}
+
+.mapforms {
+    display: flex;
+}
+
+.mapforms iframe {
+    height: 550px;
+    width: 50vw;
+}
+
+.map_form input {
+    width: 49.2%;
+    border: 1px solid lightgray;
+    padding: 9px 12px;
+    outline: none;
+}
+
+.map_form input:hover,
+.map_form textarea:hover {
+    border: 1px solid coral;
+}
+
+.map_form {
+    height: 550px;
+    width: 50vw;
+    background-image: url("../contact-bg.jpg");
+    padding: 70px;
+}
+
+.map_form_child {
+    background-color: white;
+    border-radius: 5px;
+    padding: 45px;
+}
+
+#subject {
+    width: 99%;
+    margin-top: 20px;
+}
+
+textarea {
+    height: 170px;
+    width: 99%;
+    margin: 20px 0;
+    border: none;
+    padding: 15px 10px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+.map_form button {
+    color: white;
+    background: rgb(237, 86, 58);
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.footer {
+    color: rgb(35, 45, 56);
+    padding: 20px 30px;
+    text-align: center;
+    position: static;
+}
